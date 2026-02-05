@@ -8,7 +8,7 @@ export default function LandingHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full bg-white/80 backdrop-blur-md shadow-sm fixed top-0 left-0 z-50 transition-all duration-300">
+    <header className="w-full bg-white/80 backdrop-blur-md shadow-sm sticky top-0 left-0 z-50 transition-all duration-30">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
 
         {/* Logo */}
@@ -35,12 +35,13 @@ export default function LandingHeader() {
           <Link href="#login" className="text-gray-900 text-sm lg:text-base font-medium">
             Log In
           </Link>
-          <Link
-            href="#start-trial"
-            className="bg-blue-500 text-white font-semibold text-sm lg:text-base px-5 py-2 rounded-xl shadow-md hover:bg-blue-600 transition"
-          >
-            Start Free Trial
-          </Link>
+<Link
+  href="#start-trial"
+  className="bg-blue-500 !text-white font-semibold text-sm px-5 py-2 rounded-xl shadow-md hover:bg-blue-600 transition"
+>
+  Start Free Trial
+</Link>
+
         </div>
 
         {/* Mobile Menu Button */}
@@ -55,12 +56,11 @@ export default function LandingHeader() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden border-t border-gray-200 bg-white fixed top-16 left-0 w-full z-40 shadow-lg">
+        <div className="md:hidden border-t border-gray-200 bg-white">
           <ul className="flex flex-col px-6 py-6 gap-4 text-base font-medium text-gray-700">
             <li><Link onClick={() => setOpen(false)} href="#features">Features</Link></li>
             <li><Link onClick={() => setOpen(false)} href="#how-it-works">How It Works</Link></li>
-            <li><Link onClick={() => setOpen(false)} href="#results">Results</Link></li>
-            <li><Link onClick={() => setOpen(false)} href="#testimonials">Testimonials</Link></li>
+            <li><Link onClick={() => setOpen(false)} href="#pricing">Pricing</Link></li>
             <li><Link onClick={() => setOpen(false)} href="#faq">FAQ</Link></li>
 
             <div className="pt-4 mt-4 border-t border-gray-200 flex flex-col gap-3">
@@ -74,10 +74,11 @@ export default function LandingHeader() {
               <Link
                 onClick={() => setOpen(false)}
                 href="#start-trial"
-                className="bg-blue-500 text-white font-semibold px-4 py-2 rounded-xl text-center"
+                className="bg-blue-500 !text-white font-semibold px-4 py-2 rounded-xl text-center"
               >
                 Start Free Trial
               </Link>
+
             </div>
           </ul>
         </div>
