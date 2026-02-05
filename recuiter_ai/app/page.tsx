@@ -168,6 +168,54 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ======================== Impact & Results Section ======================== */}
+      <section className="w-full py-35 bg-[#f3f7fd] flex flex-col items-center justify-center">
+        <div className="mb-8 text-center">
+          <span className="text-blue-600 font-semibold text-md tracking-wide uppercase" style={{letterSpacing: '0.05em'}}>Impact & Results</span>
+          <h2 className="mt-4 text-4xl md:text-5xl font-extrabold text-gray-900 mb-3 leading-tight" style={{lineHeight: 1.15}}>
+            Real Results from <span className="bg-gradient-to-r from-blue-600 to-purple-500 bg-clip-text text-transparent">Real Companies</span>
+          </h2>
+          <p className="text-gray-500 text-lg md:text-xl font-normal">Our customers see measurable improvements from day one.</p>
+        </div>
+        <div className="flex flex-col md:flex-row gap-6 w-full max-w-7xl justify-center items-stretch mt-8">
+          {/* Card 1 */}
+          <div className="bg-white rounded-2xl shadow p-8 flex-1 min-w-[300px] flex flex-col items-center">
+            <span className="bg-blue-100 text-blue-600 rounded-full p-3 mb-4"><svg width="28" height="28" fill="none" stroke="currentColor"><path d="M4 17l6-6 4 4 8-8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M4 21V17h4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
+            <div className="text-3xl font-extrabold text-gray-900 mb-1">10×</div>
+            <div className="font-bold text-gray-700 mb-1">Faster Screening</div>
+            <div className="text-gray-400 text-sm text-center">Screen candidates in seconds, not hours</div>
+          </div>
+          {/* Card 2 */}
+          <div className="bg-white rounded-2xl shadow p-8 flex-1 min-w-[300px] flex flex-col items-center">
+            <span className="bg-blue-100 text-blue-600 rounded-full p-3 mb-4"><svg width="28" height="28" fill="none" stroke="currentColor"><circle cx="14" cy="14" r="10" strokeWidth="2"/><path d="M14 8v6l4 2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
+            <div className="text-3xl font-extrabold text-gray-900 mb-1">70%</div>
+            <div className="font-bold text-gray-700 mb-1">Faster Time-to-Hire</div>
+            <div className="text-gray-400 text-sm text-center">From weeks to days on average</div>
+          </div>
+          {/* Card 3 */}
+          <div className="bg-white rounded-2xl shadow p-8 flex-1 min-w-[300px] flex flex-col items-center">
+            <span className="bg-blue-100 text-blue-600 rounded-full p-3 mb-4"><svg width="28" height="28" fill="none" stroke="currentColor"><circle cx="14" cy="14" r="10" strokeWidth="2"/><path d="M10 14h8M14 10v8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
+            <div className="text-3xl font-extrabold text-gray-900 mb-1">25×</div>
+            <div className="font-bold text-gray-700 mb-1">Interview Capacity</div>
+            <div className="text-gray-400 text-sm text-center">Handle more candidates simultaneously</div>
+          </div>
+          {/* Card 4 */}
+          <div className="bg-white rounded-2xl shadow p-8 flex-1 min-w-[300px] flex flex-col items-center">
+            <span className="bg-blue-100 text-blue-600 rounded-full p-3 mb-4"><svg width="28" height="28" fill="none" stroke="currentColor"><circle cx="14" cy="14" r="10" strokeWidth="2"/><path d="M10 14l2 2 4-4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
+            <div className="text-3xl font-extrabold text-gray-900 mb-1">95%</div>
+            <div className="font-bold text-gray-700 mb-1">Application Completion</div>
+            <div className="text-gray-400 text-sm text-center">Frictionless candidate experience</div>
+          </div>
+          {/* Card 5 */}
+          <div className="bg-white rounded-2xl shadow p-8 flex-1 min-w-[300px] flex flex-col items-center">
+            <span className="bg-blue-100 text-blue-600 rounded-full p-3 mb-4"><svg width="28" height="28" fill="none" stroke="currentColor"><circle cx="14" cy="14" r="10" strokeWidth="2"/><path d="M10 18h8M10 14h8M10 10h8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></span>
+            <div className="text-3xl font-extrabold text-gray-900 mb-1">80%</div>
+            <div className="font-bold text-gray-700 mb-1">Lower Costs</div>
+            <div className="text-gray-400 text-sm text-center">Reduce cost-per-hire dramatically</div>
+          </div>
+        </div>
+      </section>
       </main>
     </>
   );
