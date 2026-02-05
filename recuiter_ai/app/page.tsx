@@ -9,7 +9,7 @@ export default function Home() {
       <main className="min-h-screen w-full bg-gradient-to-br from-[#f6faff] to-white pt-24 pb-12 px-4 flex flex-col items-center justify-start overflow-hidden">
         {/* Hero Section */}
         <section className="w-full max-w-3xl mx-auto flex flex-col items-center text-center relative" style={{ minHeight: '520px' }}>
-          {/* Floating Bubbles - closer to headline */}
+          {/* Floating Bubbles */}
           <div className="absolute left-0 top-8 -translate-x-[100%] md:-translate-x-[110%] z-10 float-bubble float-delay-1">
             <div className="bg-white rounded-xl shadow-lg px-6 py-4 flex items-center gap-3 text-gray-500 text-base min-w-[220px]">
               <span className="inline-block h-4 w-4 bg-gray-200 rounded-full"></span>
