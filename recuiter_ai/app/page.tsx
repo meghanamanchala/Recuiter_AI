@@ -91,7 +91,7 @@ export default function Home() {
         </div>
 
         {/* ======================== Features Section ======================== */}
-        <section className="w-full py-35 bg-transparent flex flex-col items-center justify-center">
+        <section id="how-it-works" className="w-full py-35 bg-transparent flex flex-col items-center justify-center">
           <div className="mb-10 text-center">
             <span className="text-blue-600 font-semibold text-md tracking-wide uppercase" style={{ letterSpacing: '0.05em' }}>How It Works</span>
             <h2 className="mt-4 text-4xl md:text-5xl font-extrabold text-gray-900 mb-3 leading-tight" style={{ lineHeight: 1.15 }}>
@@ -99,7 +99,7 @@ export default function Home() {
             </h2>
             <p className="text-gray-500 text-lg md:text-xl font-normal">Build powerful hiring workflows in minutes—no code required.</p>
           </div>
-          <div className="flex flex-col md:flex-row gap-8 w-full max-w-6xl px-2 sm:px-0 justify-center items-stretch">
+          <div id="features" className="flex flex-col md:flex-row gap-8 w-full max-w-6xl px-2 sm:px-0 justify-center items-stretch">
             {/* Feature Card 1 */}
             <div className="bg-white rounded-2xl shadow-lg p-8 flex-1 min-w-0 sm:min-w-[320px] flex flex-col items-start overflow-hidden w-full">
               <h3 className="font-bold text-lg text-gray-900 mb-2 text-left">Candidate Screening & Scheduling</h3>
@@ -173,7 +173,7 @@ export default function Home() {
         </section>
 
         {/* ======================== Impact & Results Section ======================== */}
-        <section className="w-full py-35 bg-[#f3f7fd] flex flex-col items-center justify-center">
+        <section id="results" className="w-full py-35 bg-[#f3f7fd] flex flex-col items-center justify-center">
           <div className="mb-8 text-center">
             <span className="text-blue-600 font-semibold text-md tracking-wide uppercase" style={{ letterSpacing: '0.05em' }}>Impact & Results</span>
             <h2 className="mt-4 text-4xl md:text-5xl font-extrabold text-gray-900 mb-3 leading-tight" style={{ lineHeight: 1.15 }}>
@@ -221,7 +221,7 @@ export default function Home() {
         </section>
 
         {/* ======================== Testimonials Section ======================== */}
-          <section className="w-full py-35 bg-white flex flex-col items-center justify-center">
+          <section id="testimonials" className="w-full py-35 bg-white flex flex-col items-center justify-center">
             <div className="mb-10 text-center">
               <span className="text-blue-600 font-semibold text-md tracking-wide uppercase" style={{ letterSpacing: '0.05em' }}>Testimonials</span>
               <h2 className="mt-4 text-4xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-3 leading-tight" style={{ lineHeight: 1.15 }}>
@@ -283,7 +283,7 @@ export default function Home() {
           </section>
 
         {/* ======================== FAQ Section ======================== */}
-        <section className="w-full py-20 bg-[#f3f7fd] flex flex-col items-center justify-center">
+        <section id="faq" className="w-full py-20 bg-[#f3f7fd] flex flex-col items-center justify-center">
           <div className="mb-8 text-center">
             <span className="text-blue-600 font-semibold text-md tracking-wide uppercase" style={{ letterSpacing: '0.05em' }}>FAQ</span>
             <h2 className="mt-4 text-4xl md:text-5xl font-extrabold text-gray-900 mb-3 leading-tight" style={{ lineHeight: 1.15 }}>
