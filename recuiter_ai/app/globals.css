@@ -48,3 +48,13 @@ button, .btn {
 .float-delay-2 { animation-delay: 0.5s; }
 .float-delay-3 { animation-delay: 1s; }
 .float-delay-4 { animation-delay: 1.5s; }
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+  display: flex;
+  width: max-content;
+}
