@@ -7,29 +7,29 @@ export default function Home() {
   return (
     <>
       <LandingHeader />
-      <main className="min-h-screen w-full bg-gradient-to-br from-[#f6faff] to-white pt-24 pb-12 px-4 flex flex-col items-center justify-start overflow-hidden">
+      <main className="min-h-screen w-full bg-gradient-to-br from-[#f6faff] to-white pt-24 sm:pt-24 pb-12 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-start overflow-hidden">
         {/* ======================== Hero Section ======================== */}
         <section className="w-full max-w-3xl mx-auto flex flex-col items-center text-center relative" style={{ minHeight: '520px' }}>
           {/* Floating message bubbles around headline */}
-          <div className="absolute left-0 top-8 -translate-x-[100%] md:-translate-x-[110%] z-10 float-bubble float-delay-1">
+          <div className=" hidden md:block absolute left-0 top-8 -translate-x-[100%] md:-translate-x-[110%] z-10 float-bubble float-delay-1">
             <div className="bg-white rounded-xl shadow-lg px-6 py-4 flex items-center gap-3 text-gray-500 text-base min-w-[220px]">
               <span className="inline-block h-4 w-4 bg-gray-200 rounded-full"></span>
               We've been reviewing resumes for 3 weeks...
             </div>
           </div>
-          <div className="absolute left-1/2 top-16 translate-x-[100%] md:translate-x-[120%] z-10 float-bubble float-delay-2">
+          <div className="hidden md:block absolute left-1/2 top-16 translate-x-[100%] md:translate-x-[120%] z-10 float-bubble float-delay-2">
             <div className="bg-white rounded-xl shadow-lg px-6 py-4 flex items-center gap-3 text-gray-500 text-base min-w-[220px]">
               <span className="inline-block h-4 w-4 bg-gray-200 rounded-full"></span>
               Still waiting to hear back from candidates
             </div>
           </div>
-          <div className="absolute left-1/2 bottom-0 mb-8 -translate-x-[150%] md:-translate-x-[180%] z-10 float-bubble float-delay-3">
+          <div className="hidden md:block absolute left-1/2 bottom-0 mb-8 -translate-x-[150%] md:-translate-x-[180%] z-10 float-bubble float-delay-3">
             <div className="bg-white rounded-xl shadow-lg px-6 py-4 flex items-center gap-3 text-gray-500 text-base min-w-[220px]">
               <span className="inline-block h-4 w-4 bg-gray-200 rounded-full"></span>
               Our best candidate just accepted another offer
             </div>
           </div>
-          <div className="absolute left-1/2 bottom-0 mb-8 translate-x-[100%] md:translate-x-[130%] z-10 float-bubble float-delay-4">
+          <div className="hidden md:block absolute left-1/2 bottom-0 mb-8 translate-x-[100%] md:translate-x-[130%] z-10 float-bubble float-delay-4">
             <div className="bg-white rounded-xl shadow-lg px-6 py-4 flex items-center gap-3 text-gray-500 text-base min-w-[220px]">
               <span className="inline-block h-4 w-4 bg-gray-200 rounded-full"></span>
               Interview scheduling is a nightmare
@@ -40,11 +40,11 @@ export default function Home() {
             <span className="inline-block bg-blue-50 text-blue-600 text-sm font-semibold px-5 py-2 rounded-full shadow-sm">AI-Powered Recruiting Platform</span>
           </div>
           {/* Main headline */}
-          <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4 leading-tight relative z-20">
+          <h1 className="text-4xl sm:text-4xl md:text-6xl font-extrabold text-gray-900 mb-4 leading-tight relative z-20">
             Every Hire, <span className="text-blue-600">Faster</span> and <span className="text-blue-700">Better</span>
           </h1>
           {/* Subheadline/description */}
-          <p className="max-w-xl mx-auto text-gray-600 mb-8 text-lg relative z-20">
+          <p className="max-w-xl mx-auto text-gray-600 mb-8 sm:text-lg text-lg relative z-20">
             Stop losing top candidates to slow hiring. RecruiterAI automates screening, scheduling, and interviews—so you hire the best talent before your competitors do.
           </p>
           {/* CTA buttons */}
@@ -99,75 +99,75 @@ export default function Home() {
             </h2>
             <p className="text-gray-500 text-lg md:text-xl font-normal">Build powerful hiring workflows in minutes—no code required.</p>
           </div>
-          <div className="flex flex-col md:flex-row gap-8 w-full max-w-6xl justify-center items-stretch">
+          <div className="flex flex-col md:flex-row gap-8 w-full max-w-6xl px-2 sm:px-0 justify-center items-stretch">
             {/* Feature Card 1 */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 flex-1 min-w-[320px] flex flex-col items-start overflow-hidden">
+            <div className="bg-white rounded-2xl shadow-lg p-8 flex-1 min-w-0 sm:min-w-[320px] flex flex-col items-start overflow-hidden w-full">
               <h3 className="font-bold text-lg text-gray-900 mb-2 text-left">Candidate Screening & Scheduling</h3>
               <p className="text-gray-500 mb-6 text-left">AI reviews every application and schedules qualified candidates automatically.</p>
-              <div className="flex items-center w-full justify-center mt-auto gap-2">
-                <div className="flex flex-col items-center min-w-[80px]">
-                  <span className="bg-blue-600 text-white rounded-full p-3 mb-2"><Users size={24} /></span>
-                  <span className="text-xs text-gray-700 font-semibold">Applications</span>
-                </div>
-                {/* Diamond connector between blue and purple */}
-                <div className="flex flex-col items-center mx-1 min-w-[120px]">
-                  <div className="flex items-center w-full justify-center">
-                    <span className="w-8 border-t border-gray-200"></span>
-                    <span className="mx-1 bg-gray-100 text-gray-600 rounded-lg px-3 py-1 font-semibold text-sm shadow-sm flex items-center justify-center" style={{ clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)', minWidth: 56, minHeight: 28 }}>AI Screen</span>
-                    <span className="w-8 border-t border-gray-200"></span>
+                <div className="flex items-center w-full justify-center mt-auto gap-2">
+                  {/* Applications Icon and Label */}
+                  <div className="flex flex-col items-center min-w-0 flex-1">
+                    <span className="bg-blue-600 text-white rounded-full p-3 mb-1"><Users size={22} /></span>
+                    <span className="text-xs text-gray-700 font-semibold whitespace-nowrap">Applications</span>
+                  </div>
+                  {/* Diamond connector and label */}
+                  <div className="flex flex-col items-center min-w-0 flex-1">
+                    <div className="flex flex-col items-center">
+                      <span className="bg-gray-100 text-gray-600 rounded-lg px-3 py-1 font-semibold text-xs shadow-sm flex items-center justify-center mb-1" style={{ clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)', minWidth: 48, minHeight: 22 }}>AI Screen</span>
+                    </div>
+                  </div>
+                  {/* Auto Schedule Icon and Label */}
+                  <div className="flex flex-col items-center min-w-0 flex-1">
+                    <span className="bg-purple-400 text-white rounded-full p-3 mb-1"><Calendar size={22} /></span>
+                    <span className="text-xs text-gray-700 font-semibold whitespace-nowrap">Auto Schedule</span>
                   </div>
                 </div>
-                <div className="flex flex-col items-center min-w-[80px]">
-                  <span className="bg-purple-400 text-white rounded-full p-3 mb-2"><Calendar size={24} /></span>
-                  <span className="text-xs text-gray-700 font-semibold">Auto Schedule</span>
-                </div>
-              </div>
             </div>
             {/* Feature Card 2 */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 flex-1 min-w-[320px] flex flex-col items-start">
+            <div className="bg-white rounded-2xl shadow-lg p-8 flex-1 min-w-0 sm:min-w-[320px] flex flex-col items-start overflow-hidden w-full">
               <h3 className="font-bold text-lg text-gray-900 mb-2 text-left">Multi-Round Interview Automation</h3>
-              <p className="text-gray-500 mb-6 text-left">Conduct AI-powered interviews and seamlessly advance top performers.</p>
-              <div className="flex items-center w-full justify-between mt-auto">
-                <div className="flex flex-col items-center">
-                  <span className="bg-blue-600 text-white rounded-full p-3 mb-2"><MessageSquare size={24} /></span>
-                  <span className="text-xs text-gray-700 font-semibold">AI Interview</span>
-                </div>
-                {/* Diamond connector between blue and purple */}
-                <div className="flex flex-col items-center mx-2">
-                  <div className="flex items-center w-full">
-                    <span className="w-12 border-t border-gray-200"></span>
-                    <span className="mx-2 bg-gray-100 text-gray-600 rounded-lg px-4 py-1 font-semibold text-sm shadow-sm flex items-center justify-center" style={{ clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)', minWidth: 64, minHeight: 32 }}>Evaluate</span>
-                    <span className="w-12 border-t border-gray-200"></span>
+              <p className="text-gray-500 mb-6 text-left">Conduct AI-powered interviews that adapt in real time and quickly surface top performers.</p>
+                <div className="flex items-center w-full justify-center mt-auto gap-2">
+                  {/* AI Interview Icon and Label */}
+                  <div className="flex flex-col items-center min-w-0 flex-1">
+                    <span className="bg-blue-600 text-white rounded-full p-3 mb-1"><MessageSquare size={22} /></span>
+                    <span className="text-xs text-gray-700 font-semibold whitespace-nowrap">AI Interview</span>
+                  </div>
+                  {/* Diamond connector and label */}
+                  <div className="flex flex-col items-center min-w-0 flex-1">
+                    <div className="flex flex-col items-center">
+                      <span className="bg-gray-100 text-gray-600 rounded-lg px-3 py-1 font-semibold text-xs shadow-sm flex items-center justify-center mb-1" style={{ clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)', minWidth: 48, minHeight: 22 }}>Evaluate</span>
+                    </div>
+                  </div>
+                  {/* Advance Icon and Label */}
+                  <div className="flex flex-col items-center min-w-0 flex-1">
+                    <span className="bg-purple-400 text-white rounded-full p-3 mb-1"><ArrowUpRight size={22} /></span>
+                    <span className="text-xs text-gray-700 font-semibold whitespace-nowrap">Advance</span>
                   </div>
                 </div>
-                <div className="flex flex-col items-center">
-                  <span className="bg-purple-400 text-white rounded-full p-3 mb-2"><ArrowUpRight size={24} /></span>
-                  <span className="text-xs text-gray-700 font-semibold">Advance</span>
-                </div>
-              </div>
             </div>
             {/* Feature Card 3 */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 flex-1 min-w-[320px] flex flex-col items-start">
+            <div className="bg-white rounded-2xl shadow-lg p-8 flex-1 min-w-0 sm:min-w-[320px] flex flex-col items-start overflow-hidden w-full">
               <h3 className="font-bold text-lg text-gray-900 mb-2 text-left">Passive Candidate Re-engagement</h3>
               <p className="text-gray-500 mb-6 text-left">Automatically reconnect with past applicants when new roles open.</p>
-              <div className="flex items-center w-full justify-between mt-auto">
-                <div className="flex flex-col items-center">
-                  <span className="bg-blue-600 text-white rounded-full p-3 mb-2"><RefreshCw size={24} /></span>
-                  <span className="text-xs text-gray-700 font-semibold">New Role</span>
-                </div>
-                {/* Diamond connector between blue and purple */}
-                <div className="flex flex-col items-center mx-2">
-                  <div className="flex items-center w-full">
-                    <span className="w-12 border-t border-gray-200"></span>
-                    <span className="mx-2 bg-gray-100 text-gray-600 rounded-lg px-4 py-1 font-semibold text-sm shadow-sm flex items-center justify-center" style={{ clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)', minWidth: 64, minHeight: 32 }}>Match</span>
-                    <span className="w-12 border-t border-gray-200"></span>
+                <div className="flex items-center w-full justify-center mt-auto gap-2">
+                  {/* New Role Icon and Label */}
+                  <div className="flex flex-col items-center min-w-0 flex-1">
+                    <span className="bg-blue-600 text-white rounded-full p-3 mb-1"><RefreshCw size={22} /></span>
+                    <span className="text-xs text-gray-700 font-semibold whitespace-nowrap">New Role</span>
+                  </div>
+                  {/* Diamond connector and label */}
+                  <div className="flex flex-col items-center min-w-0 flex-1">
+                    <div className="flex flex-col items-center">
+                      <span className="bg-gray-100 text-gray-600 rounded-lg px-3 py-1 font-semibold text-xs shadow-sm flex items-center justify-center mb-1" style={{ clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)', minWidth: 48, minHeight: 22 }}>Match</span>
+                    </div>
+                  </div>
+                  {/* Outreach Icon and Label */}
+                  <div className="flex flex-col items-center min-w-0 flex-1">
+                    <span className="bg-purple-400 text-white rounded-full p-3 mb-1"><Mail size={22} /></span>
+                    <span className="text-xs text-gray-700 font-semibold whitespace-nowrap">Outreach</span>
                   </div>
                 </div>
-                <div className="flex flex-col items-center">
-                  <span className="bg-purple-400 text-white rounded-full p-3 mb-2"><Mail size={24} /></span>
-                  <span className="text-xs text-gray-700 font-semibold">Outreach</span>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -181,7 +181,7 @@ export default function Home() {
             </h2>
             <p className="text-gray-500 text-lg md:text-xl font-normal">Our customers see measurable improvements from day one.</p>
           </div>
-          <div className="flex flex-col md:flex-row gap-6 w-full max-w-7xl justify-center items-stretch mt-8">
+          <div className="flex flex-col md:flex-row gap-6 w-full max-w-7xl px-2 sm:px-0 justify-center items-stretch mt-8">
             {/* Card 1 */}
             <div className="bg-white rounded-2xl shadow p-8 flex-1 min-w-[300px] flex flex-col items-center">
               <span className="bg-blue-100 text-blue-600 rounded-full p-3 mb-4"><svg width="28" height="28" fill="none" stroke="currentColor"><path d="M4 17l6-6 4 4 8-8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /><path d="M4 21V17h4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg></span>
@@ -221,64 +221,66 @@ export default function Home() {
         </section>
 
         {/* ======================== Testimonials Section ======================== */}
-        <section className="w-full py-35 bg-white flex flex-col items-center justify-center">
-          <div className="mb-8 text-center">
-            <span className="text-blue-600 font-semibold text-md tracking-wide uppercase" style={{ letterSpacing: '0.05em' }}>Testimonials</span>
-            <h2 className="mt-4 text-4xl md:text-5xl font-extrabold text-gray-900 mb-3 leading-tight" style={{ lineHeight: 1.15 }}>
-              Loved by <span className="bg-gradient-to-r from-blue-600 to-purple-500 bg-clip-text text-transparent">Hiring Teams</span>
-            </h2>
-          </div>
-          <div className="flex flex-col md:flex-row gap-8 w-full max-w-8xl justify-center items-stretch mt-8">
-            {/* Testimonial 1 */}
-            <div className="bg-white rounded-2xl shadow p-8 flex-1 min-w-[300px] flex flex-col items-start border border-gray-100">
-              <div className="flex items-center mb-3">
-                {[...Array(5)].map((_, i) => (
-                  <span key={i} className="text-blue-500 mr-1">★</span>
-                ))}
-              </div>
-              <div className="text-gray-700 text-base mb-6">"RecruiterAI cut our time-to-hire by 60%. We went from struggling to fill roles in 45 days to closing positions in under 2 weeks."</div>
-              <div className="flex items-center mt-auto">
-                <span className="bg-gray-200 text-gray-600 rounded-full h-10 w-10 flex items-center justify-center font-bold mr-3">S</span>
-                <div>
-                  <div className="font-bold text-gray-900">Sarah Chen</div>
-                  <div className="text-gray-500 text-sm">VP of People, TechScale</div>
+          <section className="w-full py-35 bg-white flex flex-col items-center justify-center">
+            <div className="mb-10 text-center">
+              <span className="text-blue-600 font-semibold text-md tracking-wide uppercase" style={{ letterSpacing: '0.05em' }}>Testimonials</span>
+              <h2 className="mt-4 text-4xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-3 leading-tight" style={{ lineHeight: 1.15 }}>
+                Loved by <span className="bg-gradient-to-r from-blue-600 to-purple-500 bg-clip-text text-transparent">Hiring Teams</span>
+              </h2>
+            </div>
+            <div className="w-full max-w-7xl px-2 sm:px-4 md:px-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {/* Testimonial 1 */}
+                <div className="bg-white rounded-3xl shadow-lg p-8 flex flex-col border border-gray-100 hover:shadow-xl transition-shadow duration-200">
+                  <div className="flex items-center mb-4">
+                    <span className="bg-gray-200 text-gray-600 rounded-full h-12 w-12 flex items-center justify-center font-bold text-lg mr-4">S</span>
+                    <div>
+                      <div className="font-bold text-gray-900 text-lg">Sarah Chen</div>
+                      <div className="text-gray-500 text-sm">VP of People, TechScale</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center mb-3">
+                    {[...Array(5)].map((_, i) => (
+                      <span key={i} className="text-blue-500 text-lg mr-1">★</span>
+                    ))}
+                  </div>
+                  <div className="text-gray-700 text-base mb-2 italic">"RecruiterAI cut our time-to-hire by 60%. We went from struggling to fill roles in 45 days to closing positions in under 2 weeks."</div>
+                </div>
+                {/* Testimonial 2 */}
+                <div className="bg-white rounded-3xl shadow-lg p-8 flex flex-col border border-gray-100 hover:shadow-xl transition-shadow duration-200">
+                  <div className="flex items-center mb-4">
+                    <span className="bg-gray-200 text-gray-600 rounded-full h-12 w-12 flex items-center justify-center font-bold text-lg mr-4">M</span>
+                    <div>
+                      <div className="font-bold text-gray-900 text-lg">Marcus Johnson</div>
+                      <div className="text-gray-500 text-sm">CEO & Founder, GrowthStack</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center mb-3">
+                    {[...Array(5)].map((_, i) => (
+                      <span key={i} className="text-blue-500 text-lg mr-1">★</span>
+                    ))}
+                  </div>
+                  <div className="text-gray-700 text-base mb-2 italic">"The AI interviews are incredible. Candidates love the experience, and we get consistent, unbiased evaluations every time."</div>
+                </div>
+                {/* Testimonial 3 */}
+                <div className="bg-white rounded-3xl shadow-lg p-8 flex flex-col border border-gray-100 hover:shadow-xl transition-shadow duration-200">
+                  <div className="flex items-center mb-4">
+                    <span className="bg-gray-200 text-gray-600 rounded-full h-12 w-12 flex items-center justify-center font-bold text-lg mr-4">E</span>
+                    <div>
+                      <div className="font-bold text-gray-900 text-lg">Emily Rodriguez</div>
+                      <div className="text-gray-500 text-sm">Head of HR, Innovate Labs</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center mb-3">
+                    {[...Array(5)].map((_, i) => (
+                      <span key={i} className="text-blue-500 text-lg mr-1">★</span>
+                    ))}
+                  </div>
+                  <div className="text-gray-700 text-base mb-2 italic">"We scaled from 20 to 150 employees in 8 months without adding a single recruiter. RecruiterAI made it possible."</div>
                 </div>
               </div>
             </div>
-            {/* Testimonial 2 */}
-            <div className="bg-white rounded-2xl shadow p-8 flex-1 min-w-[300px] flex flex-col items-start border border-gray-100">
-              <div className="flex items-center mb-3">
-                {[...Array(5)].map((_, i) => (
-                  <span key={i} className="text-blue-500 mr-1">★</span>
-                ))}
-              </div>
-              <div className="text-gray-700 text-base mb-6">"The AI interviews are incredible. Candidates love the experience, and we get consistent, unbiased evaluations every time."</div>
-              <div className="flex items-center mt-auto">
-                <span className="bg-gray-200 text-gray-600 rounded-full h-10 w-10 flex items-center justify-center font-bold mr-3">M</span>
-                <div>
-                  <div className="font-bold text-gray-900">Marcus Johnson</div>
-                  <div className="text-gray-500 text-sm">CEO & Founder, GrowthStack</div>
-                </div>
-              </div>
-            </div>
-            {/* Testimonial 3 */}
-            <div className="bg-white rounded-2xl shadow p-8 flex-1 min-w-[300px] flex flex-col items-start border border-gray-100">
-              <div className="flex items-center mb-3">
-                {[...Array(5)].map((_, i) => (
-                  <span key={i} className="text-blue-500 mr-1">★</span>
-                ))}
-              </div>
-              <div className="text-gray-700 text-base mb-6">"We scaled from 20 to 150 employees in 8 months without adding a single recruiter. RecruiterAI made it possible."</div>
-              <div className="flex items-center mt-auto">
-                <span className="bg-gray-200 text-gray-600 rounded-full h-10 w-10 flex items-center justify-center font-bold mr-3">E</span>
-                <div>
-                  <div className="font-bold text-gray-900">Emily Rodriguez</div>
-                  <div className="text-gray-500 text-sm">Head of HR, Innovate Labs</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+          </section>
 
         {/* ======================== FAQ Section ======================== */}
         <section className="w-full py-20 bg-[#f3f7fd] flex flex-col items-center justify-center">
@@ -288,7 +290,7 @@ export default function Home() {
               Frequently Asked Questions
             </h2>
           </div>
-          <div className="w-full max-w-3xl flex flex-col gap-4">
+          <div className="w-full max-w-3xl px-2 sm:px-0 flex flex-col gap-4">
             <FaqItem question="How does RecruiterAI's AI interviewing work?">
               Our AI conducts structured interviews via chat or voice, asking role-specific questions and follow-ups based on candidate responses. It evaluates answers against your criteria and provides detailed scorecards, ensuring consistent and fair assessments for every candidate.
             </FaqItem>
@@ -313,10 +315,10 @@ export default function Home() {
         {/* ======================== Final CTA Section ======================== */}
         <section className="w-full py-28 flex flex-col items-center justify-center bg-white relative">
           <div className="max-w-3xl w-full mx-auto flex flex-col items-center text-center">
-            <h2 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+            <h2 className="text-4xl sm:text-4xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
               Ready to Hire <span className="bg-gradient-to-r from-blue-600 to-purple-500 bg-clip-text text-transparent">Smarter</span>?
             </h2>
-            <p className="text-gray-500 text-lg md:text-xl font-normal mb-8">
+            <p className="text-base sm:text-lg md:text-xl text-gray-500 text-lg md:text-xl font-normal mb-8">
               Join 500+ companies that have transformed their hiring process with RecruiterAI. Start your free trial today—no credit card required.
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center mb-6">
