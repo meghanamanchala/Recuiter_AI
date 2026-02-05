@@ -1,5 +1,5 @@
 import LandingHeader from './components/LandingHeader';
-import { ArrowRight, PlayCircle } from 'lucide-react';
+import { ArrowRight, PlayCircle, Users, ScanLine, Calendar, MessageSquare, Triangle, ArrowUpRight, RefreshCw, Square, Mail } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -87,6 +87,87 @@ export default function Home() {
             </div>
           </section>
         </div>
+      {/* ======================== Features Section ======================== */}
+      <section className="w-full py-20 bg-transparent flex flex-col items-center justify-center">
+        <div className="mb-10 text-center">
+          <span className="text-blue-600 font-semibold text-md tracking-wide uppercase" style={{letterSpacing: '0.05em'}}>How It Works</span>
+          <h2 className="mt-4 text-4xl md:text-5xl font-extrabold text-gray-900 mb-3 leading-tight" style={{lineHeight: 1.15}}>
+            AI Recruiting Software That Works<br className="hidden md:block" />Like Your Own <span className="bg-gradient-to-r from-blue-600 to-purple-500 bg-clip-text text-transparent">HR Team</span>
+          </h2>
+          <p className="text-gray-500 text-lg md:text-xl font-normal">Build powerful hiring workflows in minutes—no code required.</p>
+        </div>
+        <div className="flex flex-col md:flex-row gap-8 w-full max-w-6xl justify-center items-stretch">
+          {/* Feature Card 1 */}
+          <div className="bg-white rounded-2xl shadow-lg p-8 flex-1 min-w-[320px] flex flex-col items-start overflow-hidden">
+            <h3 className="font-bold text-lg text-gray-900 mb-2 text-left">Candidate Screening & Scheduling</h3>
+            <p className="text-gray-500 mb-6 text-left">AI reviews every application and schedules qualified candidates automatically.</p>
+            <div className="flex items-center w-full justify-center mt-auto gap-2">
+              <div className="flex flex-col items-center min-w-[80px]">
+                <span className="bg-blue-600 text-white rounded-full p-3 mb-2"><Users size={24} /></span>
+                <span className="text-xs text-gray-700 font-semibold">Applications</span>
+              </div>
+              {/* Diamond connector between blue and purple */}
+              <div className="flex flex-col items-center mx-1 min-w-[120px]">
+                <div className="flex items-center w-full justify-center">
+                  <span className="w-8 border-t border-gray-200"></span>
+                  <span className="mx-1 bg-gray-100 text-gray-600 rounded-lg px-3 py-1 font-semibold text-sm shadow-sm flex items-center justify-center" style={{clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)', minWidth: 56, minHeight: 28}}>AI Screen</span>
+                  <span className="w-8 border-t border-gray-200"></span>
+                </div>
+              </div>
+              <div className="flex flex-col items-center min-w-[80px]">
+                <span className="bg-purple-400 text-white rounded-full p-3 mb-2"><Calendar size={24} /></span>
+                <span className="text-xs text-gray-700 font-semibold">Auto Schedule</span>
+              </div>
+            </div>
+          </div>
+          {/* Feature Card 2 */}
+          <div className="bg-white rounded-2xl shadow-lg p-8 flex-1 min-w-[320px] flex flex-col items-start">
+            <h3 className="font-bold text-lg text-gray-900 mb-2 text-left">Multi-Round Interview Automation</h3>
+            <p className="text-gray-500 mb-6 text-left">Conduct AI-powered interviews and seamlessly advance top performers.</p>
+            <div className="flex items-center w-full justify-between mt-auto">
+              <div className="flex flex-col items-center">
+                <span className="bg-blue-600 text-white rounded-full p-3 mb-2"><MessageSquare size={24} /></span>
+                <span className="text-xs text-gray-700 font-semibold">AI Interview</span>
+              </div>
+              {/* Diamond connector between blue and purple */}
+              <div className="flex flex-col items-center mx-2">
+                <div className="flex items-center w-full">
+                  <span className="w-12 border-t border-gray-200"></span>
+                  <span className="mx-2 bg-gray-100 text-gray-600 rounded-lg px-4 py-1 font-semibold text-sm shadow-sm flex items-center justify-center" style={{clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)', minWidth: 64, minHeight: 32}}>Evaluate</span>
+                  <span className="w-12 border-t border-gray-200"></span>
+                </div>
+              </div>
+              <div className="flex flex-col items-center">
+                <span className="bg-purple-400 text-white rounded-full p-3 mb-2"><ArrowUpRight size={24} /></span>
+                <span className="text-xs text-gray-700 font-semibold">Advance</span>
+              </div>
+            </div>
+          </div>
+          {/* Feature Card 3 */}
+          <div className="bg-white rounded-2xl shadow-lg p-8 flex-1 min-w-[320px] flex flex-col items-start">
+            <h3 className="font-bold text-lg text-gray-900 mb-2 text-left">Passive Candidate Re-engagement</h3>
+            <p className="text-gray-500 mb-6 text-left">Automatically reconnect with past applicants when new roles open.</p>
+            <div className="flex items-center w-full justify-between mt-auto">
+              <div className="flex flex-col items-center">
+                <span className="bg-blue-600 text-white rounded-full p-3 mb-2"><RefreshCw size={24} /></span>
+                <span className="text-xs text-gray-700 font-semibold">New Role</span>
+              </div>
+              {/* Diamond connector between blue and purple */}
+              <div className="flex flex-col items-center mx-2">
+                <div className="flex items-center w-full">
+                  <span className="w-12 border-t border-gray-200"></span>
+                  <span className="mx-2 bg-gray-100 text-gray-600 rounded-lg px-4 py-1 font-semibold text-sm shadow-sm flex items-center justify-center" style={{clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)', minWidth: 64, minHeight: 32}}>Match</span>
+                  <span className="w-12 border-t border-gray-200"></span>
+                </div>
+              </div>
+              <div className="flex flex-col items-center">
+                <span className="bg-purple-400 text-white rounded-full p-3 mb-2"><Mail size={24} /></span>
+                <span className="text-xs text-gray-700 font-semibold">Outreach</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       </main>
     </>
   );
