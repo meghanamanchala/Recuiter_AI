@@ -1,5 +1,6 @@
 import LandingHeader from './components/LandingHeader';
 import { ArrowRight, PlayCircle, Users, ScanLine, Calendar, MessageSquare, Triangle, ArrowUpRight, RefreshCw, Square, Mail } from 'lucide-react';
+import FaqItem from './components/FaqItem';
 
 export default function Home() {
   return (
@@ -274,6 +275,36 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* ======================== FAQ Section ======================== */}
+        <section className="w-full py-20 bg-[#f3f7fd] flex flex-col items-center justify-center">
+          <div className="mb-8 text-center">
+            <span className="text-blue-600 font-semibold text-md tracking-wide uppercase" style={{letterSpacing: '0.05em'}}>FAQ</span>
+            <h2 className="mt-4 text-4xl md:text-5xl font-extrabold text-gray-900 mb-3 leading-tight" style={{lineHeight: 1.15}}>
+              Frequently Asked Questions
+            </h2>
+          </div>
+          <div className="w-full max-w-3xl flex flex-col gap-4">
+            <FaqItem question="How does RecruiterAI's AI interviewing work?">
+              Our AI conducts structured interviews via chat or voice, asking role-specific questions and follow-ups based on candidate responses. It evaluates answers against your criteria and provides detailed scorecards, ensuring consistent and fair assessments for every candidate.
+            </FaqItem>
+            <FaqItem question="Can I customize the screening criteria?">
+              Absolutely. You define the skills, experience levels, and qualifications that matter for each role. Our AI learns your preferences and applies them consistently across all applications, ensuring only qualified candidates move forward.
+            </FaqItem>
+            <FaqItem question="How long does it take to get started?">
+              Most teams are up and running within 30 minutes. Simply connect your job postings, define your criteria, and RecruiterAI handles the rest. No technical setup or integrations required to start screening candidates.
+            </FaqItem>
+            <FaqItem question="Is RecruiterAI suitable for high-volume hiring?">
+              Yes, RecruiterAI is designed to scale. Whether you're hiring 10 or 10,000 candidates, our AI processes applications instantly and can conduct unlimited simultaneous interviews without quality degradation.
+            </FaqItem>
+            <FaqItem question="What about data privacy and compliance?">
+              We're SOC 2 Type II certified and GDPR compliant. All candidate data is encrypted at rest and in transit. We never sell data, and you maintain full ownership and control of all information in your account.
+            </FaqItem>
+            <FaqItem question="Can candidates talk to a human if needed?">
+              Of course. RecruiterAI augments your team, not replaces it. Candidates can request human interaction at any point, and you can configure when to automatically involve your recruiters in the process.
+            </FaqItem>
           </div>
         </section>
 
