@@ -88,6 +88,7 @@ export default function Home() {
             </div>
           </section>
         </div>
+
         {/* ======================== Features Section ======================== */}
         <section className="w-full py-35 bg-transparent flex flex-col items-center justify-center">
           <div className="mb-10 text-center">
@@ -281,8 +282,8 @@ export default function Home() {
         {/* ======================== FAQ Section ======================== */}
         <section className="w-full py-20 bg-[#f3f7fd] flex flex-col items-center justify-center">
           <div className="mb-8 text-center">
-            <span className="text-blue-600 font-semibold text-md tracking-wide uppercase" style={{letterSpacing: '0.05em'}}>FAQ</span>
-            <h2 className="mt-4 text-4xl md:text-5xl font-extrabold text-gray-900 mb-3 leading-tight" style={{lineHeight: 1.15}}>
+            <span className="text-blue-600 font-semibold text-md tracking-wide uppercase" style={{ letterSpacing: '0.05em' }}>FAQ</span>
+            <h2 className="mt-4 text-4xl md:text-5xl font-extrabold text-gray-900 mb-3 leading-tight" style={{ lineHeight: 1.15 }}>
               Frequently Asked Questions
             </h2>
           </div>
@@ -305,6 +306,30 @@ export default function Home() {
             <FaqItem question="Can candidates talk to a human if needed?">
               Of course. RecruiterAI augments your team, not replaces it. Candidates can request human interaction at any point, and you can configure when to automatically involve your recruiters in the process.
             </FaqItem>
+          </div>
+        </section>
+
+        {/* ======================== Final CTA Section ======================== */}
+        <section className="w-full py-28 flex flex-col items-center justify-center bg-white relative">
+          <div className="max-w-3xl w-full mx-auto flex flex-col items-center text-center">
+            <h2 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+              Ready to Hire <span className="bg-gradient-to-r from-blue-600 to-purple-500 bg-clip-text text-transparent">Smarter</span>?
+            </h2>
+            <p className="text-gray-500 text-lg md:text-xl font-normal mb-8">
+              Join 500+ companies that have transformed their hiring process with RecruiterAI. Start your free trial today—no credit card required.
+            </p>
+            <div className="flex flex-col md:flex-row gap-4 justify-center mb-6">
+              <button
+                className="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-xl border-2 border-blue-600 flex items-center gap-2 transition-transform duration-200 hover:bg-blue-700 hover:scale-105 hover:-translate-y-1 active:scale-95 active:shadow-md focus:outline-none focus:ring-4 focus:ring-blue-200"
+              >
+                Start Free Trial <ArrowRight className="h-5 w-5" />
+              </button>
+              <button className="bg-white border border-black/30 hover:border-black/60 text-gray-900 px-8 py-4 rounded-xl font-semibold text-lg shadow-xl flex items-center gap-2 transition-all duration-200 hover:bg-gray-50 hover:scale-105 hover:-translate-y-1 active:scale-95 active:shadow-md focus:outline-none focus:ring-4 focus:ring-blue-100">
+                <svg className="h-5 w-5 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2" /><path d="M16 3v4M8 3v4" /></svg>
+                Schedule Demo
+              </button>
+            </div>
+            <div className="text-gray-400 text-base">14-day free trial • No credit card required • Cancel anytime</div>
           </div>
         </section>
 
