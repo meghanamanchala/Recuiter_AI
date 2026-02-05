@@ -1,6 +1,7 @@
 import LandingHeader from './components/LandingHeader';
 import { ArrowRight, PlayCircle, Users, ScanLine, Calendar, MessageSquare, Triangle, ArrowUpRight, RefreshCw, Square, Mail } from 'lucide-react';
 import FaqItem from './components/FaqItem';
+import LandingFooter from './components/LandingFooter';
 
 export default function Home() {
   return (
@@ -332,7 +333,7 @@ export default function Home() {
             <div className="text-gray-400 text-base">14-day free trial • No credit card required • Cancel anytime</div>
           </div>
         </section>
-
+        <LandingFooter />
       </main>
     </>
   );
