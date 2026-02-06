@@ -55,12 +55,11 @@ export default function LandingHeader() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden border-t border-gray-200 bg-white fixed top-16 left-0 w-full z-40 shadow-lg">
+        <div className="md:hidden border-t border-gray-200 bg-white">
           <ul className="flex flex-col px-6 py-6 gap-4 text-base font-medium text-gray-700">
             <li><Link onClick={() => setOpen(false)} href="#features">Features</Link></li>
             <li><Link onClick={() => setOpen(false)} href="#how-it-works">How It Works</Link></li>
-            <li><Link onClick={() => setOpen(false)} href="#results">Results</Link></li>
-            <li><Link onClick={() => setOpen(false)} href="#testimonials">Testimonials</Link></li>
+            <li><Link onClick={() => setOpen(false)} href="#pricing">Pricing</Link></li>
             <li><Link onClick={() => setOpen(false)} href="#faq">FAQ</Link></li>
 
             <div className="pt-4 mt-4 border-t border-gray-200 flex flex-col gap-3">
